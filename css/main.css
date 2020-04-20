@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Forms
+        - Lists
+        - Media
+        - Tables
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Buttons
+        - Header
+        - Navigation 
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+        - Alignment	    
+        - Color
+        - Size
+---*/
+
+/*-----4.0 ELEMENTS-----*/
+
+/*---typography---*/
+
+body {
+    font-family: 'futura-pt', 'sans-serif';
+    font-size: 1rem;
+}
+
+h1, h2, h3 {
+    font-family: 'abolition', 'sans-serif';
+}
+
+h1 {
+    font-size: 9rem;
+    letter-spacing: .3rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+    letter-spacing: .1rem;
+}
+
+header p {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+/*---images---*/
+
+#brew {
+    background-image: url(../img/img-home-brewskys.jpg);
+    background-image: cover;
+}
+
+#flex {
+    background-image: url(../img/img-home-flexport.jpg);
+    background-image: cover;
+}
+
+#senn {
+    background-image: url(../img/img-home-sennheiser.jpg);
+    background-image: cover;
+}
+
+#norwich {
+    background-image: url(../img/img-home-norwich.jpg);
+    background-image: cover;
+}
+
+#twin {
+    background-image: url(../img/img-home-twin-finch.jpg);
+    background-image: cover;
+}
+
+#hilltop {
+    background-image: url(../img/img-home-hilltop.jpg);
+    background-image: cover;
+}
+
+#met {
+    background-image: url(../img/img-home-met.jpg);
+    background-image: cover;
+}
+
+#rock {
+    background-image: url(../img/img-home-rtv.jpg);
+    background-image: cover;
+}
+
+#work div div:hover {
+    opacity: .3;
+    transition: ease-in;
+    transition-duration: .4s;
+}
+
+
+
+
+/*-----6.0 COMPONENTS-----*/
+
+/*---header---*/
+
+header {
+    color: #fff;
+}
+
+/*---navigation---*/
+
+nav a {
+    color: #f2f2f2;
+}
+
+
+/*---sections---*/
+
+header {
+    padding: 3em 0 7em 0;
+}
+
+#about, #contact, #work {
+    padding: 6em 0;
+}
+
+
+/*-----7.0 Utilities-----*/
+
+header, footer {
+    background-color: #333;
+}
+
+#about {
+    background-color: #FCF8F5;
+}
