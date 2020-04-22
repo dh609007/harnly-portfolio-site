@@ -34,7 +34,7 @@ body {
     font-size: 1rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, #prv-nxt a {
     font-family: 'abolition', 'sans-serif';
 }
 
@@ -51,6 +51,10 @@ h2 {
 header p {
     font-size: 2rem;
     line-height: 2rem;
+}
+
+h2, h3 {
+    color: #333;
 }
 
 /*---images---*/
@@ -97,6 +101,10 @@ header p {
 
 #work div div:hover {
     opacity: .3;
+    -ms-transition: ease-in;
+    -o-transition: ease-in;
+    -moz-transition: ease-in;
+    -webkit-transition: ease-in;
     transition: ease-in;
     transition-duration: .4s;
 }
@@ -105,6 +113,24 @@ header p {
 
 
 /*-----6.0 COMPONENTS-----*/
+
+/*---contact---*/
+
+#contact a {
+    font-size: 2rem;
+}
+
+#email a  {
+    font-size: 1.5rem;
+}
+
+#contact a, #prv-nxt a {
+    color: #333;
+}
+
+#contact a:hover, #prv-nxt a:hover {
+    color: #ED1C24;
+}
 
 /*---header---*/
 
@@ -116,6 +142,11 @@ header {
 
 nav a {
     color: #f2f2f2;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #ED1C24;
 }
 
 
@@ -125,7 +156,11 @@ header {
     padding: 3em 0 7em 0;
 }
 
-#about, #contact, #work {
+footer, #work-head {
+    padding: 2em 0;
+}
+
+#about, #contact, #work, #work-desc {
     padding: 6em 0;
 }
 
@@ -136,6 +171,6 @@ header, footer {
     background-color: #333;
 }
 
-#about {
+section, #work {
     background-color: #FCF8F5;
 }
