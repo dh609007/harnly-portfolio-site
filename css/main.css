@@ -58,8 +58,12 @@ header p, #prv-nxt a {
     line-height: 2rem;
 }
 
-h2, h3 {
+h2, h3, h4 {
     color: #333;
+}
+
+footer small {
+    color: rgb(124, 124, 124);
 }
 
 @media screen and (max-width: 740px) {
@@ -158,7 +162,7 @@ h2, h3 {
 
 /*---header---*/
 
-header, small {
+header {
     color: #fff;
 }
 
@@ -171,7 +175,8 @@ header nav li {
 
 @media screen and (max-width: 810px) {
     header nav li {
-        margin: 0 1em;
+        margin: .5em .8em;
+        font-size: .9rem;
     }
 } 
 
@@ -187,9 +192,8 @@ header nav li:nth-child(3), footer img, #work-head img {
     width: 5em;
 }
 
-.title-bar img {
-    width: 3em;
-    margin-left: 1em;
+header img {
+    width: 4em;
 }
 
 nav a {
@@ -209,15 +213,24 @@ header {
 }
 
 header h1 {
-    padding-top: .5em;
+    padding-top: .9em;
 }
 
-footer, #work-head {
-    padding: 2em 0;
+footer {
+    padding: 2em 0 1.5em 0;
 }
+
+footer div div {
+    margin-bottom: .5em;
+}
+
 
 #about, #contact, #work-desc {
     padding: 6em 0;
+}
+
+#work-head {
+    padding: 1em 0;
 }
 
 #work-img img {
@@ -233,7 +246,7 @@ header, footer, .title-bar {
     background-color: #333;
 }
 
-section, #work {
+section, #work, #prv-nxt {
     background-color: #FCF8F5;
 }
 
