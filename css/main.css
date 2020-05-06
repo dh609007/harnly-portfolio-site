@@ -90,42 +90,42 @@ footer small {
 
 #brew {
     background-image: url(../img/img-home-brewskys.jpg);
-    background-image: cover;
+    background-size: cover;
 }
 
 #flex {
     background-image: url(../img/img-home-flexport.jpg);
-    background-image: cover;
+    background-size: cover;
 }
 
 #senn {
     background-image: url(../img/img-home-sennheiser.jpg);
-    background-image: cover;
+    background-size: cover;
 }
 
 #norwich {
     background-image: url(../img/img-home-norwich.jpg);
-    background-image: cover;
+    background-size: cover;
 }
 
 #twin {
     background-image: url(../img/img-home-twin-finch.jpg);
-    background-image: cover;
+    background-size: cover;
 }
 
 #hilltop {
     background-image: url(../img/img-home-hilltop.jpg);
-    background-image: cover;
+    background-size: cover;
 }
 
 #met {
     background-image: url(../img/img-home-met.jpg);
-    background-image: cover;
+    background-size: cover;
 }
 
 #rock {
     background-image: url(../img/img-home-rtv.jpg);
-    background-image: cover;
+    background-size: cover;
 }
 
 #work div div:hover {
