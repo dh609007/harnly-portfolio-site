@@ -53,7 +53,7 @@ h3 {
     font-size: 3.5rem;
 }
 
-header p, #prv-nxt a {
+#hero p, #prv-nxt a {
     font-size: 1.7rem;
     line-height: 2rem;
 }
@@ -158,11 +158,12 @@ footer small {
 
 #contact a:hover, #prv-nxt a:hover {
     color: #ED1C24;
+    transition: .5s ease;
 }
 
 /*---header---*/
 
-header {
+header, #hero {
     color: #fff;
 }
 
@@ -189,7 +190,7 @@ header nav li:last-child {
 }
 
 header nav li:nth-child(3), footer img, #work-head img {
-    width: 5em;
+    width: 4em;
 }
 
 header img {
@@ -203,13 +204,28 @@ nav a {
 
 nav a:hover {
     color: #ED1C24;
+    transition: .5s ease;
 }
+
+#work-head a {
+    border-bottom: solid .1em transparent;
+}
+
+#work-head a:hover {
+    border-bottom: solid .1em #ED1C24;
+    transition: .5s ease;
+}
+
 
 
 /*---sections---*/
 
 header {
-    padding: 3em 0 7em 0;
+    padding-top: 2em; 
+}
+
+#hero {
+    padding: 7em 0;
 }
 
 header h1 {
@@ -234,15 +250,25 @@ footer div div {
 }
 
 #work-img img {
-    padding-bottom: 4em;
+    padding-bottom: 5em;
 }
 
+@media screen and (max-width: 810px) {
+
+    #about, #contact, #work-desc {
+        padding: 4em 0;
+    }
+
+    #work-img img {
+        padding-bottom: 3em;
+    }
+} 
 
 /*-----7.0 Utilities-----*/
 
 /*---colors---*/
 
-header, footer, .title-bar {
+header, footer, #hero {
     background-color: #333;
 }
 
