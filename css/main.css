@@ -147,14 +147,13 @@ footer small {
     color: #333;
 }
 
-#contact a:hover, #prv-nxt a:hover, #work-desc a:hover {
+#contact a:hover, #prv-nxt p:hover, #work-desc a:hover {
     color: #ED1C24;
     transition: .5s ease;
 }
 
 #contact a:active {
     color: #ED1C24;
-    transition: .5s ease;
 }
 
 
