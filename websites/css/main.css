@@ -1,0 +1,769 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*----------------------------------------
+TABLE OF CONTENTS:
+------------------------------------------*/
+
+/*-------------------
+1.0	SETTINGS
+---------------------*/
+
+/*-------------------
+2.0	TOOLS
+---------------------*/
+
+/*-------------------
+3.0	GENERIC
+---------------------*/
+
+/*-------------------
+4.0	ELEMENTS
+---------------------*/
+/*---blockquote---*/
+/*---forms---*/
+/*---lists---*/
+/*---media---*/
+/*---typography---*/
+/*---font sizes---*/
+
+/*-------------------------
+5.0	OBJECTS
+---------------------------*/
+/*---FRAMEWORK---*/
+
+/*-------------------------
+6.0	COMPONENTS
+---------------------------*/
+/*---buttons---*/
+/*---footer---*/
+/*---form---*/
+/*---customizing select button---*/
+/*---sprites---*/
+/*---navigation---*/
+/*---frames---*/
+/*---spacing---*/
+/*---positioning---*/
+
+/*-------------------------
+7.0	UTILITIES
+---------------------------*/
+/*---colors---*/
+
+
+
+
+
+/*-----4.0 ELEMENTS-----*/
+
+/*---blockquote---*/
+
+blockquote {
+    background-color: #EBD3B9;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+/*---forms---*/
+
+
+input {
+    display: block;
+}
+
+label {
+    display: none;
+}
+
+input, select {
+    width: 100%;
+}
+
+footer input {
+    width: 70%;
+}
+
+placeholder {
+    color: #1F0C00;
+}
+
+
+/*---lists---*/
+
+
+li {
+    display: inline;
+}
+
+li a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+
+
+/*---media---*/
+
+:focus {
+    outline: none;
+}
+
+#bg-hero {
+    background: no-repeat center 100% url("../img/bg-img-hero.jpg");
+}
+
+#process {
+    background-image: url("../img/bg-img-process.jpg");
+    background-repeat: no-repeat;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+footer li:first-child a{
+    background-image: url("../img/sprite-fb.png");
+}
+
+footer li:nth-child(2) a {
+    background-image: url("../img/sprite-twitter.png");
+}
+
+footer li:last-child a {
+    background-image: url("../img/sprite-insta.png");
+}
+
+footer li a {
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px){
+    #ship img {
+        display: none; 
+    }
+
+}
+
+
+
+/*---typography---*/
+
+html {
+    font-size: 1rem;
+    color: #1F0C00; 
+}
+
+body, #featured .description, #roasts .description {
+    font-family: "aaux-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav a, #bg-hero p, h2, h3, #featured p, blockquote, #roasts p, #brew p:first-child, #ship p:first-child, input, #find p, textarea, footer {
+    font-family: "oswald", sans-serif;
+}
+
+blockquote footer, h2, #bg-hero p {
+    font-weight: 300;
+}
+
+featured header p {
+    font-weight: 400;
+}
+
+#bg-hero span {
+    font-weight: 700;
+}
+
+footer p {
+    font-style: normal;
+}
+
+footer li span {
+    display: none;
+}
+
+h2, h3, #bg-hero a, #bg-hero span, .btn {
+    text-transform: uppercase;
+}
+
+#bg-hero p, #bg-hero a, #roasts a, #process p, #process h2, footer {
+    color: #FCF2E8;
+}
+
+blockquote footer {
+    color: #1F0C00; 
+}
+
+#ship {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+    #ship, #find p {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    #ship, #find p {
+        text-align: left;
+    }
+}
+
+
+/*---font-sizes---*/
+
+#bg-hero p span {
+    font-size: 1.8rem;
+}
+
+#bg-hero p, footer label {
+    font-size: 1.0rem;
+}
+
+#bg-hero p a, .btn, #bg-hero, footer, blockquote footer {
+    font-size: .7rem;
+}
+
+#featured a {
+    font-size: .8rem;
+}
+
+.description, blockquote, #process p, #brew p:first-child, #ship p, #find p, #find input, textarea, .custom-select {
+    font-size: .9rem;
+    line-height: 1.2rem;
+}
+
+h2 {
+    font-size: .95rem;
+}
+
+h3, #ship p:first-child {
+    font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 768px){
+    
+    #bg-hero p span {
+    font-size: 2.5rem;
+    }
+
+    #bg-hero p {
+        font-size: 1.2rem;
+    }
+
+    nav, #featured p, .btn, #find input, textarea, .custom-select {
+        font-size: .8rem;
+    }
+    
+    nav, #featured p, .btn, #bg-hero p a, #bg-hero, footer, blockquote footer, footer label, #roasts p {
+        font-size: .8rem;
+    }
+    
+    blockquote, #roasts .description, #process p, #ship p, #find p {
+        font-size: .9rem;
+    }
+
+    #brew p:first-child {
+        font-size: 1.2rem;
+    }
+
+    h2, #ship p:first-child {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px){ 
+    nav {
+        font-size: .8rem;
+    }
+    
+    #bg-hero p span {
+        font-size: 3rem;
+    }
+    
+    #bg-hero p {
+        font-size: 1.2rem;
+    }
+    
+    .btn,  #bg-hero p a {
+        font-size: .8rem;
+    }
+    
+   #featured p, blockquote, blockquote footer, #roasts p, #roasts .description, #process p, #ship p, #find p, #find input, .custom-select, textarea, footer, footer label {
+        font-size: 1rem;
+    }
+    
+    
+    h3, h2, #ship p:first-child {
+        font-size: 1.3rem;
+    }
+    
+    #brew p, #brew p:first-child {
+        font-size: 1.1rem; 
+    }
+    
+}
+
+
+
+/*-----5.0 OBJECTS-----*/
+
+
+/*---framework---*/
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:100%;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:100%;
+}
+
+
+/*-----6.0 COMPONENTS-----*/
+
+
+
+/*---buttons---*/
+
+a {
+    text-decoration: none;
+}
+ 
+nav a, footer a {
+    color: #F4EBE4;
+}
+
+nav a:hover, footer address a:hover {
+    color: #CBAA88;
+    border-bottom: .1em solid  #CBAA88;
+}
+
+#brew a:hover, footer img:hover {
+    border-bottom: .1em solid  #CBAA88;
+}
+
+#find input { 
+    padding: .5em .3em;
+}
+
+#find input:hover {
+    border-bottom: .1em solid #1F0C00;
+}
+
+#bg-hero p a {
+    border: .5px solid #F4EBE4;
+    -moz-border-radius: .3em;
+    -ms-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    -o-border-radius: .3em;
+    border-radius: .3em;
+    padding: .5em 2em;
+    display: block;
+} 
+
+#bg-hero p a:hover {
+    border: .5px solid #1F0C00;
+    background-color: #1F0C00;
+}
+
+footer form a {
+    border: .5px solid #F4EBE4;
+    -moz-border-radius: .3em;
+    -ms-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    -o-border-radius: .3em;
+    border-radius: .3em;
+    padding: .1em 2em;
+} 
+
+footer form a:hover {
+    border: .5px solid #CBAA88;
+    background-color: #CBAA88;
+}
+
+.btn {
+    border: .5px solid #1F0C00;
+    -moz-border-radius: .3em;
+    -ms-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    -o-border-radius: .3em;
+    border-radius: .3em;
+    background-color: #1F0C00;
+    padding: .5em 2em;
+    display: block;
+    text-align: center;
+}
+
+.btn:hover {
+    border: .5px solid #EBD3B9;;
+    background-color: #EBD3B9;
+}
+
+.btn:visited {
+    color: #F4EBE4; 
+}
+
+
+/*---footer---*/
+
+footer label {
+    display: inline-block;
+}
+
+footer form input, footer form p {
+    display: inline-block;
+}
+
+/*---form---*/
+
+#find input, textarea { 
+    background-color: #F4EBE4;
+    border: .1em solid #F4EBE4;
+}
+
+textarea:hover {
+    border-bottom: .1em solid #1F0C00;
+}
+
+
+/*------customizing select button------*/
+
+.custom-select {
+    position: relative;
+    font-family: oswald, sans-serif;
+}
+
+.custom-select select {
+    display: none; 
+}
+
+.select-selected {
+    background-color: #F4EBE4;
+}
+
+
+.select-selected:after { /* Style the arrow inside the select element: */
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #1F0C00 transparent transparent transparent;
+}
+
+
+.select-selected.select-arrow-active:after { /* Point the arrow upwards when the select box is open (active): */
+    border-color: transparent transparent #1F0C00 transparent;
+    top: 7px;
+}
+
+
+.select-items div,.select-selected { /* style the items (options), including the selected item: */
+    color: #1F0C00;
+    text-transform: lowercase;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+
+.select-items { /* Style items (options): */
+    position: absolute;
+    background-color: #EBD3B9;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+
+.select-hide { /* Hide the items when the select box is closed: */
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    border-bottom: .1em solid #1F0C00;
+}
+
+/*---sprites---*/
+
+#sprites li a {
+    display: inline-block;
+}
+
+#sprites a {
+    width: 27px;
+    height: 26px;
+}
+
+#sprites a:hover {
+    background-position: 0 -25px;
+}
+
+
+@media only screen and (min-width: 768px){
+    .btn, #bg-hero p a {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .btn, #bg-hero p a {
+        display: inline;
+    }
+}
+
+/*---navigation---*/
+
+
+nav li {
+    margin-right: 4.5em;
+}
+
+@media only screen and (max-width: 768px){
+    nav li {
+        margin-right: 2em;
+    }
+}
+
+
+/*---frames---*/
+
+h2 {
+    display: inline-block;
+    border: .05em solid #CBAA88;
+    padding: .6em .8em;
+}
+
+#ship img {
+    border: .05em solid #CBAA88;
+    padding: .7em;
+}
+
+#featured span {
+    border: .05em solid #CBAA88;
+    padding: 1em .1em;
+}
+
+#process h2 {
+    border: .05em solid #FCF2E8;
+}
+
+
+/*---spacing---*/
+
+
+h2 {
+    margin-bottom: 3em;
+}
+
+blockquote .col-sm-6, blockquote .col-sm-4 {
+    margin-left: calc(100%*1/12);
+}
+
+footer img {
+    padding-bottom: .5em;
+}
+
+.mapouter {
+    padding-left: 0;
+}
+
+#bg-dk-brn {
+    padding: .1em 0;
+}
+#bg-hero {
+    padding: 10em 0;
+}
+
+
+#ship {
+    padding: 1em 0;
+}
+
+#featured, #brew, #bg-footer {
+    padding: 2em 0;
+}
+
+#roasts, #process, #find {
+    padding: 5em 0;
+}
+
+#bg-hero p, #featured p:first-child {
+    margin-bottom: .5em;
+}
+
+#process img {
+    margin-bottom: 2em;
+}
+
+#bg-hero .h-rule {
+    margin-top: 2em;
+}
+
+#find input, .custom-select, footer form, footer img, footer input {
+    margin-top: 1em;
+}
+
+#featured h3, form, form #first-name{
+    margin-top: 0;
+}
+
+@media only screen and (min-width: 768px){
+    
+    #featured .h-rule {
+        margin-bottom: .7em;
+    }
+    
+    #buy-now-btn {
+        margin-top: 2.4em;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+    #bg-hero .col-sm-5 {
+        margin-top: 4em;
+}
+
+    #bg-hero .col-sm-5, #bg-hero .col-sm-12 {
+        margin-left: 4em;
+    }
+    
+    #buy-now-btn {
+        margin-top: 3.5em;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #featured .col-sm-5 {
+        margin-top: 1em;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #ship .col-sm-8 {
+        margin: 0 auto;
+        float: none;
+    }
+}
+
+
+
+/*---positioning---*/
+
+
+#icon-98 {
+    top: -1em;
+    left: 1em;
+}
+
+#featured img {
+    top: -8em;
+    right: 0em;
+}
+
+@media only screen and (max-width: 768px){
+    #featured .pos-abs {
+        position: static;
+    }
+}
+
+blockquote img {
+    top: .5em;
+    left: 0em;
+}
+
+#ship img {
+    top: -3.5em;
+    left: 2em;
+}
+
+
+
+
+
+/*-----7.0 UTILITIES-----*/
+
+.ctr-block {
+    margin: 0 auto;
+    float: none;
+}
+
+.f-right {
+    float: right;
+}
+
+.h-rule, .h-rule-wht {
+    height: .1em;
+}
+
+.h-rule {
+    background-color: #CBAA88;
+}
+
+.h-rule-wht {
+    background-color: #FCF2E8;
+}
+
+.pos-rel {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+
+.txt-ctr, h2 {
+    text-align: center;
+}
+
+
+/*---colors---*/
+
+#bg-dk-brn, #bg-footer {
+    background-color: #1F0C00;
+}
+
+#ship {
+    background-color: #F4EBE4;
+}
+
+#featured, #roasts {
+    background-color: #FCF2E8;
+}
+
+
+
+
+
+
+

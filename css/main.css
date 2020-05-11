@@ -4,25 +4,14 @@
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
-2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
-3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
-4.0 - Elements: styling for bare/generic HTML elements 
-        - Forms
-        - Lists
-        - Media
-        - Tables
-        - Typography: Headings, Paragraphs, Blockquotes, Anchors
-5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
-        - Framework
-6.0 - Components: specific designed components
-        - Buttons
-        - Header
-        - Navigation 
-7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
-        - Alignment	    
-        - Color
-        - Size
+1.0 - Settings:
+2.0 - Tools: 
+3.0 - Generic:  
+4.0 - Elements:   
+5.0 - Objects: 
+6.0 - Components:
+7.0 - Utilities:
+       
 ---*/
 
 /*-----4.0 ELEMENTS-----*/
@@ -34,7 +23,7 @@ body {
     font-size: 1.1rem;
 }
 
-h1, h2, h3, h4, #prv-nxt a {
+h1, h2, h3, h4, #prv-nxt a, #work-desc a {
     font-family: 'liquor-store', 'sans-serif';
     text-transform: uppercase;
 }
@@ -42,6 +31,7 @@ h1, h2, h3, h4, #prv-nxt a {
 h1 {
     font-size: 9rem;
     line-height: 1;
+    color: #fff;
 }
 
 h2 {
@@ -58,7 +48,7 @@ h3 {
     line-height: 2rem;
 }
 
-h2, h3, h4 {
+h2, h3, h4, p {
     color: #333;
 }
 
@@ -70,6 +60,7 @@ footer small {
 
     h1 {
         font-size: 8rem;
+        line-height: .8;
     }
 
     #contact h2, h3 {
@@ -148,24 +139,31 @@ footer small {
     font-size: 2rem;
 }
 
-#email a  {
+#email a, #work-desc a  {
     font-size: 1.5rem;
 }
 
-#contact a, #prv-nxt a {
+#contact a, #prv-nxt a, #work-desc a {
     color: #333;
 }
 
-#contact a:hover, #prv-nxt a:hover {
+#contact a:hover, #prv-nxt a:hover, #work-desc a:hover {
     color: #ED1C24;
     transition: .5s ease;
 }
 
+#contact a:active {
+    color: #ED1C24;
+    transition: .5s ease;
+}
+
+
 /*---header---*/
 
-header, #hero {
+header, #hero p {
     color: #fff;
 }
+
 
 /*---navigation---*/
 
@@ -204,15 +202,6 @@ nav a {
 
 nav a:hover {
     color: #ED1C24;
-    transition: .5s ease;
-}
-
-#work-head a {
-    border-bottom: solid .1em transparent;
-}
-
-#work-head a:hover {
-    border-bottom: solid .1em #ED1C24;
     transition: .5s ease;
 }
 
@@ -255,6 +244,10 @@ footer div div {
 
 @media screen and (max-width: 810px) {
 
+    #hero {
+        padding: 5em 0;
+    }
+
     #about, #contact, #work-desc {
         padding: 4em 0;
     }
@@ -281,6 +274,8 @@ section, #work, #prv-nxt {
 @media screen and (max-width: 740px) {
     #about div, #work-desc div {
         width: 95%;
+        margin: 0 auto;
+        text-align: center;
     }
 }
 
@@ -311,7 +306,7 @@ section, #work, #prv-nxt {
   }
   
   .text {
-    color: white;
+    color:#fff;
     font-family: 'liquor-store', 'sans-serif';
     text-transform: uppercase;
     line-height: 1;
@@ -324,3 +319,4 @@ section, #work, #prv-nxt {
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
